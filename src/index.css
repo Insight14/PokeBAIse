@@ -1,0 +1,65 @@
+:root {
+  --bg-dark: #090c12;
+  --bg-card: #f1f3f5;
+  --bg-card-hover: #ffffff;
+  --border-glass: rgba(31, 41, 55, 0.14);
+  --border-glass-glow: rgba(24, 144, 255, 0.3);
+  
+  --text-main: #1f2937;
+  --text-muted: #52606d;
+  --text-gold: #ffd700;
+
+  --navbar-bg: #e3350d;
+
+  --accent-blue: #1890ff;
+  --accent-cyan: #13c2c2;
+  --accent-gold: #faad14;
+  --accent-red: #ff4d4f;
+  --accent-green: #52c41a;
+  --accent-purple: #722ed1;
+
+  --font-heading: 'Fredoka', 'Trebuchet MS', sans-serif;
+  --font-body: 'Nunito Sans', 'Trebuchet MS', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(24, 144, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(114, 46, 209, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(250, 173, 20, 0.04) 0%, transparent 60%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.12);
+}
